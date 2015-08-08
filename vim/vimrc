@@ -28,3 +28,5 @@ set nowritebackup  " only in case you don't want a backup file while editing
 " someone else has opened the file for editing.
 " set noswapfile     " no swap files
 let mapleader=","
+" Treat .md files as Markdown
+autocmd BufNewFile,BufRead *.md setlocal filetype=markdown

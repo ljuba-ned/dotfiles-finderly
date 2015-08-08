@@ -1,0 +1,30 @@
+execute pathogen#infect()
+call pathogen#helptags()
+syntax on
+filetype plugin indent on
+
+" show and format status line
+set laststatus=2
+
+" Format the status line
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l}
+
+" to set theme for airline, uncomment following line and set desired value
+let g:airline_theme='luna'
+
+" tab related
+" set tab to 4 spaces
+set tabstop=4
+" replace tab with spaces
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+
+" disable swap and backup files
+set nobackup       " no backup files
+set nowritebackup  " only in case you don't want a backup file while editing
+" uncomment following line if you do not want swap files
+" for shared computers swapfiles are good idea -- vim will notify you if
+" someone else has opened the file for editing.
+" set noswapfile     " no swap files
+let mapleader=","
